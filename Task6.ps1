@@ -1,0 +1,1 @@
+﻿Get-Process | sort TotalProcessorTime | select -last 6

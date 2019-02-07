@@ -1,0 +1,1 @@
+﻿Get-History | Export-Clixml -path C:\M2T2_DANILAU\History.xml
