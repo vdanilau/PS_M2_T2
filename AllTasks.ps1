@@ -28,7 +28,10 @@ Get-Content -Path M2T2_DANILAU:\SERVICES.TXT #вывели содержимое 
 $var=$null   #set 0
 $sum=$null   #set 0 
 $var=Get-Variable | where {$_.Value -is [int]} #take values [int] of variables 
-foreach ($i in $var.value) {$sum+=$i} #get amount
+foreach ($i in $var.value) 
+        {
+        $sum+=$i
+        } #get amount
 Write-Output "sum= $sum" #output to screen
 
 
